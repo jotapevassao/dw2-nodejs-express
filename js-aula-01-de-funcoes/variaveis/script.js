@@ -15,6 +15,8 @@ nome = "Maria";
 document.write("<br>");
 document.write(nome);
 
-const pais = "Brasil"
-pais ="Argentina"
-O Valor de uma constante nao pode ser alterado
+const pais = "Brasil";
+pais = "Argentina";
+document.write("<br>");
+document.write(nome);
+//O Valor de uma constante nao pode ser alterado
