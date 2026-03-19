@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>/clientes</title>
+</head>
+<body>
+    <h1>Bem-vindo ao seu clientes</h1>
+     <p><a href="/">Voltar para a pagina incial</a></p>
+
+         <hr>
+    <h3>Confira nossos clientes! </h3>
+    
+ <% listaClientes.forEach(function(cliente) { %>
+    <p>
+        <a href="/clientes/<%= cliente %>">
+
+            <%= cliente %>
+        </a>
+    </p>
+    
+  <% }) %>   
+    <p><a href= "/" > Voltar para a página inicial</a></p>
+  
+
+</body>
+</html>
