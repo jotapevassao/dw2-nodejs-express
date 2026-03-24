@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <!-- Configuração de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Responsividade para dispositivos móveis -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título da página -->
+    <title>Serviços</title>
+</head>
+<body>
+
+    <!-- Título principal da página -->
+    <h1>Bem-vindo aos seus serviços</h1>
+
+    <hr>
+
+    <!-- Subtítulo -->
+    <h3>Serviços prestados</h3>
+
+    <!-- Tabela de serviços -->
+    <table border="1">
+
+        <!-- Cabeçalho da tabela -->
+        <tr>
+            <th>Serviços</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+        </tr>
+
+        <!-- Loop que percorre o array de serviços enviado pelo backend -->
+        <% servicos.forEach(function(servico){ %>
+
+            <tr>
+                <!-- Nome do serviço -->
+                <td><%= servico.servicos %></td>
+
+                <!-- Descrição do serviço -->
+                <td><%= servico.descricao %></td>
+
+                <!-- Preço do serviço -->
+                <td>R$ <%= servico.preco %></td>
+            </tr>
+
+        <% }) %>
+
+    </table>
+
+    <br>
+
+    <!-- Link para voltar à página inicial -->
+    <p>
+        <a href="/">Voltar para a página inicial</a>
+    </p>
+
+</body>
+</html>
