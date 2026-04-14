@@ -1,9 +1,6 @@
-// forma de importar Commojs (antiga)
-// const express = require("express")
-// importando o Express com ES6 Modules (nova)
-import express from "express" 
-// Metodo do Express usando para criar as rotas da aplicaçao
-const router = express.Router()
+import express from "express"
+
+const router = express.Router();
 
 
 // ROTA PEDIDOS
@@ -18,5 +15,5 @@ router.get("/pedidos",function(req,res){
         pedidos: pedidos
     })
 })
-// Exportando o modulo para usa-lo em outro arquivo
+
 export default router;
